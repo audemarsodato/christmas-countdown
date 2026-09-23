@@ -7,8 +7,7 @@ document.onclick = () => {
 
         if (isDarkMode) {
                 document.documentElement.dataset.theme = 'dark'
+                return
         }
-        else {
-                document.documentElement.dataset.theme = ''
-        }
+        document.documentElement.dataset.theme = 'light'
 }

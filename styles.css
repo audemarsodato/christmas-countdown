@@ -1,4 +1,10 @@
 :root {
+        --bg: #101512;    
+        --red: #ef5350;
+        --green: #00d90e;
+}
+
+[data-theme="light"] {
         --bg: #ffff;
         --red: #fe2525;
         --green: #00d90e;
@@ -7,8 +13,8 @@
 [data-theme="dark"] {
         --bg: #101512;    
         --red: #ef5350;
-        --green: #4caf50;
-    }
+        --green: #00d90e;
+}
 
 * {
         padding: 0;
@@ -50,6 +56,15 @@ h1 {
 
 .green {
         color: var(--green);
+        /* background: linear-gradient(
+                180deg, 
+                #fff 1%, 
+                var(--green) 50%,
+                var(--green) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent; */
 }
 
 .red {
@@ -62,6 +77,14 @@ h1 {
 
 .bg-red {
         background-color: var(--red);
+}
+
+.snow-buildup {
+        text-shadow:
+                0 -1px 0 #fff,
+                0 -2px 0 #fff,
+                0 -3px 6px rgba(255, 255, 255, 0.8)
+        ;
 }
 
 @media (min-width: 500px) {
