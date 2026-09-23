@@ -1,0 +1,74 @@
+:root {
+        --red: #fe2525;
+        --green: #00d90e;
+}
+
+* {
+        padding: 0;
+        margin: 0;
+        /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* font-family:cursive; */
+}
+
+body {
+        height: 100vh;
+        padding: 0 32px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+}
+
+h1 {
+        font-weight: 900;
+        font-size: 40px;
+}
+
+/* .countdown-label {
+        padding: 8px 4px;
+        border-radius: 4px;
+} */
+
+.countdown-label__p {
+        font-weight: 900;
+}
+
+.countdown-timer {
+        display: flex;
+        gap: 8px;
+}
+
+.green {
+        color: var(--green);
+}
+
+.red {
+        color: var(--red);
+}
+
+.bg-green {
+        background-color: var(--green);
+}
+
+.bg-red {
+        background-color: var(--red);
+}
+
+@media (min-width: 500px) {
+        body {
+                justify-content: center;
+        }
+
+        .container {
+                width: 600px;
+        }
+
+        h1 {
+                font-size: 64px;
+        }
+
+        .countdown-label__p {
+                font-size: 26px;
+        }
+}
