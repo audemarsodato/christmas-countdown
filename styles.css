@@ -1,7 +1,14 @@
 :root {
+        --bg: #ffff;
         --red: #fe2525;
         --green: #00d90e;
 }
+
+[data-theme="dark"] {
+        --bg: #101512;    
+        --red: #ef5350;
+        --green: #4caf50;
+    }
 
 * {
         padding: 0;
@@ -18,6 +25,8 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
+        background-color: var(--bg);
 }
 
 h1 {
